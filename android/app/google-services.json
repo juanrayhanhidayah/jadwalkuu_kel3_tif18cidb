@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "959713428501",
+    "project_id": "jadwalkuu",
+    "storage_bucket": "jadwalkuu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:959713428501:android:c862b1f48184eac14dba1c",
+        "android_client_info": {
+          "package_name": "com.example.jadwalkuu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "959713428501-peuuv9s4gpqahfl3c16i4of1b9s197u7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmM5iTOo9Op6JwjNlkbsXqASE120l3btE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "959713428501-peuuv9s4gpqahfl3c16i4of1b9s197u7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
