@@ -1,4 +1,4 @@
-# jadwalkuu
+# jadwal_app
 
 A new Flutter project.
 
