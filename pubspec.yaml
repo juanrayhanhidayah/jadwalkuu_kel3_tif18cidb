@@ -30,6 +30,10 @@ dependencies:
   cupertino_icons: ^1.0.0
   firebase_core: ^0.5.3
   firebase_auth: ^0.18.4+1
+  cloud_firestore: ^0.14.4
+  intl: ^0.16.1
+  table_calendar: ^2.3.3
+  change_app_package_name: ^0.1.2
 
 dev_dependencies:
   flutter_test:
