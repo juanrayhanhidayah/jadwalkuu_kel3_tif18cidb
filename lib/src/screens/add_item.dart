@@ -80,7 +80,7 @@ class _AddItemState extends State<AddItem> {
                     height: 10,
                   ),
                   TextField(
-                    controller: titleController,
+                    controller: deskripsiController,
                     textAlignVertical: TextAlignVertical.center,
                     textAlign: TextAlign.left,
                     decoration: InputDecoration(

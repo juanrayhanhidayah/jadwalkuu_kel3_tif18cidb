@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:jadwal_app/src/screens/home.dart';
+import 'package:jadwal_app/src/screens/verify.dart';
 
 class LoginScreen extends StatefulWidget {
   LoginScreen({Key key}) : super(key: key);
@@ -52,23 +53,30 @@ class _LoginScreenState extends State<LoginScreen> {
                 color: Theme.of(context).accentColor,
                 child: Text('Sign In'),
                 onPressed: () {
-                  auth.signInWithEmailAndPassword(
-                      email: _email, password: _password);
-                  Navigator.of(context).pushReplacement(MaterialPageRoute(
-                    builder: (context) => HomeScreen(),
-                  ));
-                },
-              ),
-              RaisedButton(
-                  color: Theme.of(context).accentColor,
-                  child: Text('Sign Up'),
-                  onPressed: () {
-                    auth.createUserWithEmailAndPassword(
-                        email: _email, password: _password);
+                  auth
+                      .signInWithEmailAndPassword(
+                          email: _email, password: _password)
+                      .then((_) {
                     Navigator.of(context).pushReplacement(MaterialPageRoute(
                       builder: (context) => HomeScreen(),
                     ));
-                  }),
+                  });
+                },
+              ),
+              RaisedButton(
+                color: Theme.of(context).accentColor,
+                child: Text('Sign Up'),
+                onPressed: () {
+                  auth
+                      .createUserWithEmailAndPassword(
+                          email: _email, password: _password)
+                      .then((_) {
+                    Navigator.of(context).pushReplacement(MaterialPageRoute(
+                      builder: (context) => VerifyScreen(),
+                    ));
+                  });
+                },
+              )
             ],
           )
         ],
