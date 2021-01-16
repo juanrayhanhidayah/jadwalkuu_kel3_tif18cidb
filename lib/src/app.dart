@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:jadwal_app/src/providers/entry_providers.dart';
 import 'package:jadwal_app/src/screens/login.dart';
 import 'package:provider/provider.dart';
