@@ -50,6 +50,7 @@ dev_dependencies:
 # The following section is specific to Flutter.
 flutter:
   assets: 
+    - images/pogchamp.jpg
     - assets/calendar.png
     - assets/calendar2.png
 

@@ -3,6 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:jadwal_app/src/model/entry.dart';
 import 'package:jadwal_app/src/providers/entry_providers.dart';
 import 'package:jadwal_app/src/screens/entry.dart';
+import 'package:jadwal_app/src/screens/profile.dart';
+import 'package:jadwal_app/src/screens/profile.dart';
+import 'package:jadwal_app/src/screens/test.dart';
 import 'package:provider/provider.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -12,6 +15,19 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Jadwalku'),
+        actions: [
+          IconButton(
+              icon: Icon(
+                Icons.person,
+                color: Colors.black,
+              ),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => profileu()),
+                );
+              })
+        ],
       ),
       body: StreamBuilder<List<Entry>>(
           stream: entryProvider.entries,
