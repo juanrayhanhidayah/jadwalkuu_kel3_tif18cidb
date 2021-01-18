@@ -4,8 +4,10 @@ import 'package:jadwal_app/src/model/entry.dart';
 import 'package:jadwal_app/src/providers/entry_providers.dart';
 import 'package:jadwal_app/src/screens/entry.dart';
 import 'package:provider/provider.dart';
+import 'package:table_calendar/table_calendar.dart';
 
 class HomeScreen extends StatelessWidget {
+  final CalendarController _calendarController = CalendarController();
   @override
   Widget build(BuildContext context) {
     final entryProvider = Provider.of<EntryProvider>(context);
