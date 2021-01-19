@@ -10,6 +10,7 @@ class App extends StatelessWidget {
       create: (context) => EntryProvider(),
       child: MaterialApp(
           home: LoginScreen(),
+          debugShowCheckedModeBanner: false,
           theme: ThemeData(
             accentColor: Colors.blueAccent,
             primaryColor: Colors.blue,
